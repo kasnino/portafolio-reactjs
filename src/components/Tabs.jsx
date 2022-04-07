@@ -9,7 +9,7 @@ import Grid from '@mui/material/Grid';
 import { buttonUnstyledClasses } from '@mui/base/ButtonUnstyled';
 import TabUnstyled, { tabUnstyledClasses } from '@mui/base/TabUnstyled';
 import Cards from './Card';
-
+import Fade from '@mui/material/Fade';
 const blue = {
   50: 'transparent',
   100: '#C2E0FF',
@@ -79,6 +79,8 @@ const TabsList = styled(TabsListUnstyled)`
 `;
 
 export default function UnstyledTabsCustomized() {
+    const numeros = [1,2,3,4,5];
+
   return (
     <TabsUnstyled defaultValue={0}>
         <Grid 
@@ -91,36 +93,42 @@ export default function UnstyledTabsCustomized() {
       <TabsList sx={{ border: 1, borderColor: 'primary.main' }} elevation={24} p={5}>
         <Tab>Perfil</Tab>
         <Tab>Proyectos</Tab>
-        <Tab>Çhallenge</Tab>
+        <Tab>Challenge</Tab>
         <Tab>Proyectos</Tab>
-        <Tab>Çhallenge</Tab>
+        <Tab>Challenge</Tab>
       </TabsList>
       </Grid>
         <TabPanel variant="fullwidth"  value={0}>
+           {/* hacer la animacin */}
+             {/* <Fade > */}
         <Box sx={{ borderRadius: 4 }} elevation={24} style={{height:'100%', backgroundColor: "#001e3c" }}>
              <Grid 
                 container
                 direction="row"
-                justifyContent="center"
-                alignItems="center"
+                justifyContent="left"
+                alignItems="left"
                 spacing={2}
                 mt={5}
                 p={5}
              >
-                <Grid 
-                xs={4}
+
+            {numeros.map(nuevo => 
+               <Grid 
+               key={nuevo.index}
+                xs={12}
+                md={3}
                 item
              >  
+            
                 <Cards/>
+                
             </Grid>
-            <Grid 
-                xs={4}
-                item
-             >  
-                <Cards/>
-            </Grid>
+            )  }
+                
+       
             </Grid>
         </Box>
+        {/* </Fade> */}
       </TabPanel>
       <TabPanel value={1}>Second content</TabPanel>
       <TabPanel value={2}>Third content</TabPanel>
