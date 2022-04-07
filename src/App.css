@@ -1,13 +1,11 @@
 .App {
   text-align: center;
+   background-color: #0a1929;
 }
 
-.icono-svg{
-  color:red;
-}
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html, body
+{
+  background-color: #0a1929;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -17,8 +15,8 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #0a1929;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,15 +27,6 @@
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 button {

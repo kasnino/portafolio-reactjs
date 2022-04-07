@@ -1,0 +1,190 @@
+ projects: [
+        {
+          empresa: "Reemp",
+          title: "Reemp",
+          subTitle: "Landing Page",
+          tecnologiaImg: [
+            "Vue.js-Logo.wine",
+            "vuetify",
+            "nuxtjs-icon",
+            "sass-1",
+            "GitHub-Logo.wine"
+          ],
+          icon: "school",
+          link: "http://reemp.co/",
+          logo: "sass-1",
+          ruta:"http://imgfz.com/i/e9xcZXP.png"
+        },
+        {
+          empresa: "Dominio Studio",
+          title: "Dominio Studio",
+          subTitle: "Landing Page / animación SVG",
+          tecnologiaImg: [
+            "Vue.js-Logo.wine",
+            "vuetify",
+            "sass-1",
+            "GitHub-Logo.wine",
+            "sass-1"
+          ],
+          icon: "school",
+          link: "http://demos.dominioestudio.info/landing2020/",
+          logo: "sass-1",
+          ruta:"http://imgfz.com/i/KJrsIMn.png"
+        },
+        {
+          empresa: "Reemp",
+          title: "Formulario Validation ",
+          subTitle: "Creación de un Formulario",
+          tecnologiaImg: [
+            "Vue.js-Logo.wine",
+            "vuetify",
+            "nuxtjs-icon",
+            "sass-1",
+            "GitHub-Logo.wine"
+          ],
+          icon: "school",
+          link: "http://rebel-cord.surge.sh/registro/",
+          logo: "sass-1",
+          ruta:"http://imgfz.com/i/eX4mtih.png"
+        },
+        {
+          empresa: "cpnu_spa",
+          title: "cpnu_spa",
+          subTitle: "landing / consumo de API",
+          tecnologiaImg: [
+            "Vue.js-Logo.wine",
+            "vuetify",
+            "sass-1",
+            "GitHub-Logo.wine"
+          ],
+          icon: "school",
+          link: "http://demos.dominioestudio.info/cpnu_spa/#/",
+          logo: "sass-1",
+          ruta:"http://imgfz.com/i/Df9GR05.png"
+        },
+        {
+          empresa: "Reemp",
+          title: "Reemp Dashboard",
+          subTitle: "Dashboard",
+          tecnologiaImg: [
+            "Vue.js-Logo.wine",
+            "vuetify",
+            "sass-1",
+            "nuxtjs-icon",
+            "GitHub-Logo.wine"
+          ],
+          icon: "school",
+          link: "http://well-off-nose.surge.sh/interfaz/dashboard/dashboard/",
+          logo: "sass-1",
+          ruta:"http://imgfz.com/i/OPs1hxa.jpeg"
+        },
+        {
+          empresa: "Rortas & cupcake",
+          title: "Tortas & Reposteria",
+          subTitle: "Landing Page",
+          tecnologiaImg: [
+            "javascript-seeklogo.com",
+            "Bootstrap_(front-end_framework)-Logo.wine",
+            "sass-1",
+            "GitHub-Logo.wine"
+          ],
+          icon: "school",
+          link: "http://abstracted-meat.surge.sh/",
+          logo: "sass-1",
+          ruta:"http://imgfz.com/i/3QFhoa5.png"
+        },
+        {
+          empresa: "App / Mobile interactiva /Elearnig ",
+          title: "App / Mobile",
+          subTitle: "App Mobile",
+          tecnologiaImg: [
+            "Vue.js-Logo.wine",
+            "vuetify",
+            "sass-1",
+            "GitHub-Logo.wine",
+            "javascript-seeklogo.com",
+            "Node.js-Logo.wine",
+            "css",
+            "GitHub-Logo.wine"
+          ],
+          icon: "school",
+          link:
+            "http://demos.dominioestudio.info/ibraco/libro1/unidad3/#/unidad3/0",
+          logo: "Vue.js-Logo.wine",
+          ruta:"http://imgfz.com/i/0GDcB5v.png"
+        },
+        {
+          empresa: "React Clone",
+          title: "React Clone Portafolio",
+          subTitle: "Landing Page",
+          tecnologiaImg: [
+            "React_(web_framework)-Logo.wine",
+            "Bootstrap_(front-end_framework)-Logo.wine",
+            "sass-1",
+            "GitHub-Logo.wine"
+          ],
+          icon: "school",
+          link: "https://stark-sierra-34238.herokuapp.com/",
+          logo: "React_(web_framework)-Logo.wine",
+          ruta:"http://imgfz.com/i/Gyz0Qti.png"
+        },
+        {
+          empresa: "Reemp",
+          title: "Formulario Complejo",
+          subTitle: "Formulario Avanzado",
+          tecnologiaImg: [
+            "Vue.js-Logo.wine",
+            "vuetify",
+            "sass-1",
+            "GitHub-Logo.wine",
+            "javascript-seeklogo.com",
+            "Node.js-Logo.wine",
+            "css",
+            "nuxtjs-icon"
+          ],
+          icon: "school",
+          link: "https://aliados.reemp.co/formulario",
+          logo: "Bootstrap_(front-end_framework)-Logo.wine",
+          ruta:"http://imgfz.com/i/vxY9a76.png"
+        },
+        {
+          empresa: "Yuxi Global Clone",
+          title: "Clone YuxiGlobal",
+          subTitle: "Landing Page",
+          tecnologiaImg: [
+            "Bootstrap_(front-end_framework)-Logo.wine",
+            "sass-1",
+            "GitHub-Logo.wine"
+          ],
+          icon: "school",
+          link: "http://unadvised-drawer.surge.sh/",
+          logo: "Bootstrap_(front-end_framework)-Logo.wine",
+          ruta:"http://imgfz.com/i/LOE9Gf6.png"
+        },
+        {
+          empresa: "React - Todo List",
+          title: "Todo List ReactJS",
+          subTitle: "Landing Page",
+          tecnologiaImg: [
+            "React_(web_framework)-Logo.wine",
+            "Bootstrap_(front-end_framework)-Logo.wine",
+            "sass-1",
+            "GitHub-Logo.wine"
+          ],
+          icon: "school",
+          link: "http://ubiquitous-fireman.surge.sh/",
+          logo: "React_(web_framework)-Logo.wine",
+          ruta:"http://imgfz.com/i/kgGNuaV.png"
+        },
+        {
+          empresa: "Email Marketing",
+          title: "Newsletter",
+          subTitle: "Maquetacion Email Newsletter",
+          tecnologiaImg: ["css"],
+          icon: "school",
+          link:
+            "http://demos.dominioestudio.info/newsletter/emailletter/newsletter.html",
+          logo: "css",
+          ruta:"http://imgfz.com/i/ZeGqgFB.png"
+        }
+      ],

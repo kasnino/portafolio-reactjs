@@ -1,36 +1,28 @@
-import { useState } from 'react'
+import * as React from 'react';
+import { useState} from 'react'
 import './App.css'
 import { FaBeer } from 'react-icons/fa';
-import  Header  from './components/Header'
+import  Tabs  from './components/Tabs'
+import  Products  from './components/Products'
+import Grid from '@mui/material/Grid';
+import Container from '@mui/material/Container';
 
-
-function App() {
+export default function App() {
   const [count, SetCount] = useState(2)
 
   return (
+    <React.Fragment>
+    <Container fixed p={0} m={0}>
     <div className="App">
-      <Header/>
-      <header className="App-header">
-      
-        <p>
-      
-        <FaBeer color="#fff000"/>
-        Hello Vite + React! 
-        </p>
-        <p>
-          <button type="button" onClick={() => SetCount(count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          <button type="button" onClick={(count) => SetCount(count = 0)} >
-            Reiniciar
-          </button>
-        </p>
-       
-      </header>
+      <Grid 
+        mt={5}
+        >
+      <Tabs/>
+      </Grid>
+      {/* <Products count={count}/> */}
     </div>
-  )
+    </Container>
+    </React.Fragment>
+  );
 }
 
-export default App
