@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 .App {
   text-align: center;
    background-color: #0a1929;
@@ -31,4 +33,32 @@ html, body
 
 button {
   font-size: calc(10px + 2vmin);
+}
+
+.prueba{
+  font-family: 'Mulish', sans-serif;
+
+}
+
+.prueba:hover{
+border: 2px solid #80BFFF;
+
+}
+.contenedor {
+
+  background-size: cover;
+  background-repeat:no-repeat;
+  width: 100%;
+  height:100%;
+  z-index: 1;
+  position:relative;
+}
+.sombra{
+ 
+  position: absolute;
+  width:100%;
+  height:100%;
+  background: rgba(0, 0, 0, 0) linear-gradient(280deg, 
+  rgba(255, 255, 255, 0) -59.17%, rgb(18, 20, 29) 55.09%) repeat scroll 0% 0%;
+  z-index: 2;
 }

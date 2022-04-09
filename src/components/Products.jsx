@@ -11,18 +11,13 @@ const [products, setProducts] = useState(null)
      axios.get(`${baseURL}/${props.count}`).then((response) => {
         setProducts(response.data);
       });
-    
 }, []);
 
 if (!products) return null;
-
-
         return (
-            <div >
-               
+            <div>
             <h1>{products.title}</h1>
             <p>{products.body}</p>
             </div>
         );
-
         }
