@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useState} from 'react'
+
 import './App.css'
 import Tabs  from './components/Tabs'
 import Grid from '@mui/material/Grid';
@@ -10,7 +10,7 @@ import Home from "./routes/home";
 import { Routes, Route, } from "react-router-dom";
 
 export default function App() {
-  const [count, SetCount] = useState(2)
+
 
   return (
     <React.Fragment>
