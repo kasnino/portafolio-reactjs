@@ -5,9 +5,10 @@ import TabsListUnstyled from '@mui/base/TabsListUnstyled';
 import TabPanelUnstyled from '@mui/base/TabPanelUnstyled';
 import { buttonUnstyledClasses } from '@mui/base/ButtonUnstyled';
 import TabUnstyled, { tabUnstyledClasses } from '@mui/base/TabUnstyled';
-import { useNavigate, useLocation } from 'react-router-dom';
-import { useState} from 'react'
-import Grid from '@mui/material/Grid';
+import Cards from './Card';
+import AvatarPerfil from './AvatarPerfil';
+import { Link } from "react-router-dom";
+
 
 const blue = {
   50: 'transparent',
@@ -77,34 +78,55 @@ const TabsList = styled(TabsListUnstyled)`
   position:relative;
 `;
 
-function a11yProps(index) {
-  return {
-    id: `scrollable-force-tab-${index}`,
-    'aria-controls': `scrollable-force-tabpanel-${index}`,
-  }
-};
-
 export default function UnstyledTabsCustomized() {
+  function a11yProps(index) {
+    return {
+      id: `scrollable-force-tab-${index}`,
+      'aria-controls': `scrollable-force-tabpanel-${index}`,
+    }
+  };
 
   const NavBarItem = {
     '/home': 0,
     '/perfil': 1,
     '/proyectos': 2,
   }
-   
-   const navigate = useNavigate();
-   const location = useLocation();
-   const [value, setValue] = useState(NavBarItem[location.pathname])
+
+  const [value, setValue] = React.useState(NavBarItem[location.pathname])
 
 	const handleChange = (newValue, event) => {
 		setValue(newValue)
 	}
 
 	const navigateTo = pathname => {
-    console.log(":"+ pathname)
-		navigate.push(pathname)
+		history.push(pathname)
 		handleChange(NavBarItem[pathname])
 	}
+
+    const [isLoading, setIsLoading] = useState(true);         
+    const  BASE_URL = './proyectos.json'
+    const [page, setPage] = useState(1);
+    
+    const handleChange = (event, value) => {
+    setPage(value);
+  };
+
+    useEffect(()=>{
+     const fetchProjects = async () => {
+        try {
+          await fetch(`${BASE_URL}`)
+          .then((res)=>res.json())
+          .then((data)=>{
+            setProyectos(data.projects)
+            setIsLoading(false) 
+             })
+        } catch (err) {
+          console.error(err);
+        }
+    };
+    fetchProjects();
+      },[]);
+       if (!proyectos) return null;
 
   return (
     <TabsUnstyled defaultValue={0}>
@@ -115,24 +137,47 @@ export default function UnstyledTabsCustomized() {
             alignItems="center"
             mt={5}
         >
-       <TabsList 
-            value={value}
-            onChange={handleChange}
-          
-            variant='scrollable'
-            scrollButtons='on'
-            indicatorColor='secondary'
-            textColor='inherit'
-            aria-label='scrollable force tabs example'
-       sx={{ border: 1, borderColor: 'primary.main' }} elevation={24} p={5}> 
-          <Tab {...a11yProps(0)}
-						onClick={() => navigateTo('/perfil')}>perfil</Tab>
-          <Tab {...a11yProps(1)}
-						onClick={() => navigateTo('/proyectos')}>Proyectos</Tab>
-          <Tab {...a11yProps(2)}
-						onClick={() => navigateTo('/home')}>Home</Tab> 
+       <TabsList sx={{ border: 1, borderColor: 'primary.main' }} elevation={24} p={5}> 
+          {/* <Link to="/perfil">Perfil</Link>
+          <Link to="/proyectos">Proyectos</Link> */}
+         <Tab>Tecnologias</Tab>
+          <Tab>Challenge</Tab>
+          <Tab>Ingles</Tab> 
        </TabsList> 
       </Grid>
-    </TabsUnstyled> 
+        <TabPanel variant="fullwidth"  value={0}>
+           {/* hacer la animacin */}
+             <Box  sx={{ borderRadius: 4 }} elevation={24} style={{height:'100%', backgroundColor: "#001e3c" }}>
+             <Grid 
+                container
+                direction="row"
+                justifyContent="center"
+                alignItems="top"
+                spacing={2}
+                mt={5}
+                p={0}
+             >
+                <AvatarPerfil />
+            </Grid>
+             <Grid 
+                container
+                direction="row"
+                justifyContent="left"
+                alignItems="left"
+                spacing={2}
+                mt={5}
+                p={5}
+             >
+               hola
+               </Grid>
+        </Box>
+      </TabPanel>
+      <TabPanel value={1}>
+     
+      </TabPanel>
+      {/* <TabPanel value={2}>Third content</TabPanel>
+      <TabPanel value={3}>Second content</TabPanel>
+      <TabPanel value={4}>Third content</TabPanel>
+    </TabsUnstyled> */}
   );
 }
