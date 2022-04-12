@@ -118,7 +118,7 @@ export default function UnstyledTabsCustomized() {
        <TabsList 
             value={value}
             onChange={handleChange}
-            className={classes.tabs}
+          
             variant='scrollable'
             scrollButtons='on'
             indicatorColor='secondary'
