@@ -5,7 +5,7 @@ import TabsListUnstyled from '@mui/base/TabsListUnstyled';
 import TabPanelUnstyled from '@mui/base/TabPanelUnstyled';
 import { buttonUnstyledClasses } from '@mui/base/ButtonUnstyled';
 import TabUnstyled, { tabUnstyledClasses } from '@mui/base/TabUnstyled';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 
 const blue = {
@@ -76,31 +76,31 @@ const TabsList = styled(TabsListUnstyled)`
   position:relative;
 `;
 
+function a11yProps(index) {
+  return {
+    id: `scrollable-force-tab-${index}`,
+    'aria-controls': `scrollable-force-tabpanel-${index}`,
+  }
+};
+
 export default function UnstyledTabsCustomized() {
-
-   const [page, setPage] = useState(1);
-   const [value, setValue] = useState(NavBarItem[location.pathname])
-   const navigate = useNavigate();
-
-  function a11yProps(index) {
-    return {
-      id: `scrollable-force-tab-${index}`,
-      'aria-controls': `scrollable-force-tabpanel-${index}`,
-    }
-  };
 
   const NavBarItem = {
     '/home': 0,
     '/perfil': 1,
     '/proyectos': 2,
   }
+   
+   const navigate = useNavigate();
+   const location = useLocation();
+   const [value, setValue] = useState(NavBarItem[location.pathname])
 
 	const handleChange = (newValue, event) => {
 		setValue(newValue)
 	}
 
 	const navigateTo = pathname => {
-    console.log(":"+pathname)
+    console.log(":"+ pathname)
 		navigate.push(pathname)
 		handleChange(NavBarItem[pathname])
 	}
@@ -114,10 +114,22 @@ export default function UnstyledTabsCustomized() {
             alignItems="center"
             mt={5}
         >
-       <TabsList sx={{ border: 1, borderColor: 'primary.main' }} elevation={24} p={5}> 
-          <Tab>Tecnologias</Tab>
-          <Tab>Challenge</Tab>
-          <Tab>Ingles</Tab> 
+       <TabsList 
+            value={value}
+            onChange={handleChange}
+            className={classes.tabs}
+            variant='scrollable'
+            scrollButtons='on'
+            indicatorColor='secondary'
+            textColor='inherit'
+            aria-label='scrollable force tabs example'
+       sx={{ border: 1, borderColor: 'primary.main' }} elevation={24} p={5}> 
+          <Tab {...a11yProps(0)}
+						onClick={() => navigateTo('/perfil')}>perfil</Tab>
+          <Tab {...a11yProps(1)}
+						onClick={() => navigateTo('/proyectos')}>Proyectos</Tab>
+          <Tab {...a11yProps(2)}
+						onClick={() => navigateTo('/home')}>Home</Tab> 
        </TabsList> 
       </Grid>
     </TabsUnstyled> 
