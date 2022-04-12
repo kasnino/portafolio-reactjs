@@ -6,11 +6,12 @@ import Typography from '@mui/material/Typography';
 import { CardActionArea} from '@mui/material';
 import TecnologiasGroup from './Tecnologias'
 import Grid from '@mui/material/Grid';
-import { AccessAlarm, ThreeDRotation } from '@mui/icons-material';
+import { Add } from '@mui/icons-material';
 import '../App.css'
 import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
 import Avatar from '@mui/material/Avatar';
+
 export default function ActionAreaCard(props) {
 
   return (
@@ -41,7 +42,7 @@ export default function ActionAreaCard(props) {
           {props.projects.subtitle}  
           </Typography>
           <Typography variant="body1" color="gray">
-        lorem  
+        
           </Typography>
            <Grid
               container
@@ -54,10 +55,10 @@ export default function ActionAreaCard(props) {
              
           >
           <Stack direction="row" spacing={2}>
-      <Chip   style={{color: "gray"}} variant="outlined" avatar={<Avatar>M</Avatar>} label="Demo" />
+      <Chip   style={{color: "gray"}} variant="outlined" avatar={<Avatar><Add/></Avatar>} label="Demo" />
       <Chip
-        avatar={<Avatar alt="Natacha" src="./src/icon/GitHub-Logo.wine.png" />}
-        label="Githib"
+        avatar={<Avatar alt="Natacha" src="./src/icon/GitHub-Logo.wine.svg" />}
+        label="Github"
         variant="outlined"
         style={{color: "gray"}}
       />

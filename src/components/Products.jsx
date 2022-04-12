@@ -7,11 +7,11 @@ export default function Products(props) {
 const baseURL = `https://jsonplaceholder.typicode.com/posts`;
 const [products, setProducts] = useState(null)
 
- useEffect(() => {   
-     axios.get(`${baseURL}/${props.count}`).then((response) => {
-        setProducts(response.data);
-      });
-}, []);
+    useEffect(() => {   
+        axios.get(`${baseURL}/${props.count}`).then((response) => {
+            setProducts(response.data);
+        });
+    }, []);
 
 if (!products) return null;
         return (
