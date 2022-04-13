@@ -1,6 +1,7 @@
 import Box  from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Cards from '../components/Card';
+import SkeletonLoading from '../components/SkeletonLoading'
 import { useState, useEffect } from "react";
 
 export default function Proyectos() {
@@ -41,7 +42,7 @@ export default function Proyectos() {
                 mt={5}
                 p={5}
              >
-               { isLoading ? 'hola' : 'chao' }
+               { isLoading ? <SkeletonLoading/> : 'chao' }
                   {proyectos.map((projects, key) => ( 
                       <Grid 
                         key={key}
