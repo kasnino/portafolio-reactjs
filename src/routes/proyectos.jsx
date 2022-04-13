@@ -5,16 +5,19 @@ import { useState, useEffect } from "react";
 
 export default function Proyectos() {
     const [proyectos, setProyectos] = useState([])
+    const [isLoading, setLoading] = useState(true)
     const  BASE_URL = './proyectos.json'
 
     
    useEffect(()=>{
+    setLoading(true)
      const fetchProjects = async () => {
         try {
           await fetch(`${BASE_URL}`)
           .then((res)=>res.json())
           .then((data)=>{
              setProyectos(data.projects)
+             setLoading(false)
              })
         } catch (err) {
           console.error(err);
@@ -38,6 +41,7 @@ export default function Proyectos() {
                 mt={5}
                 p={5}
              >
+               { isLoading ? 'hola' : 'chao' }
                   {proyectos.map((projects, key) => ( 
                       <Grid 
                         key={key}

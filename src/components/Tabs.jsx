@@ -102,7 +102,7 @@ export default function UnstyledTabsCustomized() {
 
 	const navigateTo = pathname => {
     console.log(":"+ pathname)
-		navigate.push(pathname)
+		navigate(pathname)
 		handleChange(NavBarItem[pathname])
 	}
 
@@ -118,13 +118,7 @@ export default function UnstyledTabsCustomized() {
        <TabsList 
             value={value}
             onChange={handleChange}
-          
-            variant='scrollable'
-            scrollButtons='on'
-            indicatorColor='secondary'
-            textColor='inherit'
-            aria-label='scrollable force tabs example'
-       sx={{ border: 1, borderColor: 'primary.main' }} elevation={24} p={5}> 
+            sx={{ border: 1, borderColor: 'primary.main' }} elevation={24} p={5}> 
           <Tab {...a11yProps(0)}
 						onClick={() => navigateTo('/perfil')}>perfil</Tab>
           <Tab {...a11yProps(1)}
