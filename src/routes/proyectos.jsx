@@ -5,15 +5,16 @@ import { useState, useEffect } from "react";
 
 export default function Proyectos() {
     const [proyectos, setProyectos] = useState([])
-    const BASE_URL = './proyectos.json'
-        useEffect(()=>{
+    const  BASE_URL = './proyectos.json'
+
+    
+   useEffect(()=>{
      const fetchProjects = async () => {
         try {
           await fetch(`${BASE_URL}`)
           .then((res)=>res.json())
           .then((data)=>{
-            setProyectos(data.projects)
-           
+             setProyectos(data.projects)
              })
         } catch (err) {
           console.error(err);
@@ -21,12 +22,13 @@ export default function Proyectos() {
     };
     fetchProjects();
       },[]);
+
+
        if (!proyectos) return null;
     return (
       <main style={{ padding: "1rem 0" }}>
         <h2>proyectos</h2>
         <Box sx={{ borderRadius: 4 }} elevation={24} style={{height:'100%', backgroundColor: "#001e3c" }}>
-             
              <Grid 
                 container
                 direction="row"
@@ -47,7 +49,6 @@ export default function Proyectos() {
                       <Cards projects={projects}/>
                     </Grid>
                  ))}  
-                 
             </Grid>
         </Box>
       </main>

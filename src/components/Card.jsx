@@ -26,7 +26,6 @@ export default function ActionAreaCard(props) {
       <CardActionArea>
       
         <CardMedia
-        
           component="img"
           height="150"
           image={props.projects.ruta}
