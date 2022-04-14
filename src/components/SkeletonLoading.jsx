@@ -22,7 +22,7 @@ export default function Variants() {
               p={1}
           >
          <Typography variant="h6" component="h6"  color="gray" >
-             Cargando los proyectos...
+            Un momento porfavor, estoy cargando los proyectos...
          </Typography>
         </Grid>
         
