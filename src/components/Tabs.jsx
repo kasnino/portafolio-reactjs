@@ -102,7 +102,7 @@ export default function UnstyledTabsCustomized() {
 
 	const navigateTo = pathname => {
     console.log(":"+ pathname)
-		navigate.push(pathname)
+		navigate(pathname)
 		handleChange(NavBarItem[pathname])
 	}
 
