@@ -13,12 +13,12 @@ export default function App() {
 
   return (
     <React.Fragment>
-    <Container fixed p={0} m={0}>
+    <Container  p={0} m={0}>
           <div className="App">
                 <Grid mt={5}>
                 <Tabs/>
-                    <div className="pruebita">
-                    <Box  sx={{ borderRadius: 4 }} elevation={24} style={{height:'100%', backgroundColor: "#001e3c" }}>
+                    <div className="pruebit">
+                    <Box   sx={{ borderRadius: 4, p: 3, border: '1px dashed grey' }} elevation={12} style={{height:'100%', backgroundColor: "#001e3c" }}>
                       <Grid container
                           direction="row"
                           justifyContent="center"

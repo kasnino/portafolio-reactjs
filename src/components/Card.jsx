@@ -20,7 +20,7 @@ export default function ActionAreaCard(props) {
     // }}
     <Card 
      className="prueba"
-     elevation={12} sx={{ maxWidth: 305 }}
+     elevation={8} sx={{ maxWidth: 305 }}
      style={{backgroundColor: "#0a1929"}}
     >
       <CardActionArea>
