@@ -1,0 +1,192 @@
+{
+  "projects": [
+        {
+          "empresa": "Reemp",
+          "title": "Reemp",
+          "subtitle": "Landing Page",
+          "tecnologiaImg": [
+            "Vue.js-Logo.wine.png",
+            "vuetify.svg",
+            "nuxtjs-icon.svg",
+            "sass-1.svg",
+            "GitHub-Logo.wine.png"
+          ],
+          "icon": "school",
+          "link": "http://reemp.co/",
+         "logo": "sass-1.svg",
+          "ruta":"http://imgfz.com/i/e9xcZXP.png"
+        },
+        {
+          "empresa": "Dominio Studio",
+          "title": "Dominio Studio",
+          "subtitle": "Landing Page / animación SVG",
+          "tecnologiaImg": [
+            "Vue.js-Logo.wine.png",
+            "vuetify.svg",
+            "sass-1.svg",
+            "GitHub-Logo.wine.png",
+            "sass-1.svg"
+          ],
+          "icon": "school",
+          "link": "http://demos.dominioestudio.info/landing2020/",
+         "logo": "sass-1.svg",
+          "ruta":"http://imgfz.com/i/KJrsIMn.png"
+        },
+        {
+          "empresa": "Reemp",
+          "title": "Formulario Validation ",
+          "subtitle": "Creación de un Formulario",
+          "tecnologiaImg": [
+            "Vue.js-Logo.wine.png",
+            "vuetify.svg",
+            "nuxtjs-icon.svg",
+            "sass-1.svg",
+            "GitHub-Logo.wine.png"
+          ],
+          "icon": "school",
+          "link": "http://rebel-cord.surge.sh/registro/",
+         "logo": "sass-1.svg",
+          "ruta":"http://imgfz.com/i/eX4mtih.png"
+        },
+        {
+          "empresa": "cpnu_spa",
+          "title": "cpnu_spa",
+          "subtitle": "landing / consumo de API",
+          "tecnologiaImg": [
+            "Vue.js-Logo.wine.png",
+            "vuetify.svg",
+            "sass-1.svg",
+            "GitHub-Logo.wine.png"
+          ],
+          "icon": "school",
+          "link": "http://demos.dominioestudio.info/cpnu_spa/#/",
+         "logo": "sass-1.svg",
+          "ruta":"http://imgfz.com/i/Df9GR05.png"
+        },
+        {
+          "empresa": "Reemp",
+          "title": "Reemp Dashboard",
+          "subtitle": "Dashboard",
+          "tecnologiaImg": [
+            "Vue.js-Logo.wine.png",
+            "vuetify.svg",
+            "sass-1.svg",
+            "nuxtjs-icon.svg",
+            "GitHub-Logo.wine.png"
+          ],
+          "icon": "school",
+          "link": "http://well-off-nose.surge.sh/interfaz/dashboard/dashboard/",
+         "logo": "sass-1.svg",
+          "ruta":"http://imgfz.com/i/OPs1hxa.jpeg"
+        },
+        {
+          "empresa": "Rortas & cupcake",
+          "title": "Tortas & Reposteria",
+          "subtitle": "Landing Page",
+          "tecnologiaImg": [
+            "javascript-seeklogocom.svg",
+            "Bootstrap_(front-end_framework)-Logo.wine.svg",
+            "sass-1.svg",
+            "GitHub-Logo.wine.png"
+          ],
+          "icon": "school",
+          "link": "http://abstracted-meat.surge.sh/",
+         "logo": "sass-1.svg",
+          "ruta":"http://imgfz.com/i/3QFhoa5.png"
+        },
+        {
+          "empresa": "App /Elearnig ",
+          "title": "App / Mobile",
+          "subtitle": "App Mobile",
+          "tecnologiaImg": [
+            "Vue.js-Logo.wine.png",
+            "vuetify.svg",
+            "sass-1.svg",
+            "GitHub-Logo.wine.png",
+            "javascript-seeklogocom.svg",
+            "Node.js-Logo.wine.svg",
+            "css.svg",
+            "GitHub-Logo.wine.png"
+          ],
+          "icon": "school",
+          "link":
+            "http://demos.dominioestudio.info/ibraco/libro1/unidad3/#/unidad3/0",
+         "logo": "Vue.js-Logo.wine.png",
+          "ruta":"http://imgfz.com/i/0GDcB5v.png"
+        },
+        {
+          "empresa": "React Clone",
+          "title": "React Clone Portafolio",
+          "subtitle": "Landing Page",
+          "tecnologiaImg": [
+            "React_(web_framework)-Logo.wine.svg",
+            "Bootstrap_(front-end_framework)-Logo.wine.svg",
+            "sass-1.svg",
+            "GitHub-Logo.wine.png"
+          ],
+          "icon": "school",
+          "link": "https://stark-sierra-34238.herokuapp.com/",
+         "logo": "React_(web_framework)-Logo.wine.svg",
+          "ruta":"http://imgfz.com/i/Gyz0Qti.png"
+        },
+        {
+          "empresa": "Reemp",
+          "title": "Formulario Complejo",
+          "subtitle": "Formulario Avanzado",
+          "tecnologiaImg": [
+            "Vue.js-Logo.wine.png",
+            "vuetify.svg",
+            "sass-1.svg",
+            "GitHub-Logo.wine.png",
+            "javascript-seeklogocom.svg",
+            "Node.js-Logo.wine.svg",
+            "css.svg",
+            "nuxtjs-icon.svg"
+          ],
+          "icon": "school",
+          "link": "https://aliados.reemp.co/formulario",
+         "logo": "Bootstrap_(front-end_framework)-Logo.wine.svg",
+          "ruta":"http://imgfz.com/i/vxY9a76.png"
+        },
+        {
+          "empresa": "Yuxi Global Clone",
+          "title": "Clone YuxiGlobal",
+          "subtitle": "Landing Page",
+          "tecnologiaImg": [
+            "Bootstrap_(front-end_framework)-Logo.wine.svg",
+            "sass-1.svg",
+            "GitHub-Logo.wine.png"
+          ],
+          "icon": "school",
+          "link": "http://unadvised-drawer.surge.sh/",
+         "logo": "Bootstrap_(front-end_framework)-Logo.wine.svg",
+          "ruta":"http://imgfz.com/i/LOE9Gf6.png"
+        },
+        {
+          "empresa": "React - Todo List",
+          "title": "Todo List ReactJS",
+          "subtitle": "Landing Page",
+          "tecnologiaImg": [
+            "React_(web_framework)-Logo.wine.svg",
+            "Bootstrap_(front-end_framework)-Logo.wine.svg",
+            "sass-1.svg",
+            "GitHub-Logo.wine.png"
+          ],
+          "icon": "school",
+          "link": "http://ubiquitous-fireman.surge.sh/",
+         "logo": "React_(web_framework)-Logo.wine.svg",
+          "ruta":"http://imgfz.com/i/kgGNuaV.png"
+        },
+        {
+          "empresa": "Email Marketing",
+          "title": "Newsletter",
+          "subtitle": "Maquetacion Email Newsletter",
+          "tecnologiaImg": ["css.svg"],
+          "icon": "school",
+          "link":
+            "http://demos.dominioestudio.info/newsletter/emailletter/newsletter.html",
+         "logo": "css.svg",
+          "ruta":"http://imgfz.com/i/ZeGqgFB.png"
+        }
+      ]
+    }

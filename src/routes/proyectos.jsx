@@ -9,7 +9,7 @@ import Typography from '@mui/material/Typography';
 export default function Proyectos() {
     const [proyectos, setProyectos] = useState([])
     const [isLoading, setLoading] = useState(true)
-    const  BASE_URL = './proyectos.json'
+    const  BASE_URL = './public/proyectos.json'
 
     
    useEffect(()=>{
