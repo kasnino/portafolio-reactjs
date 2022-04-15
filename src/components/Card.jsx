@@ -29,7 +29,7 @@ export default function ActionAreaCard(props) {
           component="img"
           height="150"
           image={props.projects.ruta}
-          alt="green iguana"
+          alt={props.projects.subtitle}
         />
        
         <CardContent style={{backgroundColor: "#0a1929"}} >
@@ -56,7 +56,7 @@ export default function ActionAreaCard(props) {
           <Stack direction="row" spacing={2}>
       <Chip   style={{color: "gray"}} variant="outlined" avatar={<Avatar><Add/></Avatar>} label="Demo" />
       <Chip
-        avatar={<Avatar alt="Natacha" src="./src/icon/GitHub-Logo.wine.svg" />}
+        avatar={<Avatar alt="Natacha" src="./icon/GitHub-Logo.wine.svg" />}
         label="Github"
         variant="outlined"
         style={{color: "gray"}}
