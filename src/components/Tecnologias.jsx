@@ -13,7 +13,7 @@ export default function GroupAvatars(props) {
              }}
              md={{ width:20, height:20, border: 0.1, borderColor: 'secundary'}}
              sx={{ width:20, height:20, border: 0.1, borderColor: 'secundary'}}
-             alt={tecnologo} key={key} src={`./src/icon/${tecnologo}`} />
+             alt={tecnologo} key={key} src={`./icon/${tecnologo}`} />
          ))}
     </AvatarGroup>
   );

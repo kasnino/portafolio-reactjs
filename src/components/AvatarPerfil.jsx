@@ -51,7 +51,7 @@ export default function BadgeAvatars() {
         <Avatar 
         md={{ width:140, height:140}}
         sx={{ width:100, height:100}}
-        alt="Remy Sharp" src="../static/contemplative-reptile.jpg" />
+        alt="Remy Sharp" src="./contemplative-reptile.jpg" />
       </StyledBadge>
       {/* <Badge
         overlap="circular"
